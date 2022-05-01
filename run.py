@@ -15,3 +15,16 @@ sales = SHEET.worksheet('sales')
 data = sales.get_all_values()
 
 print(data)
+
+def get_sales_data():
+    """
+    Gets sales figures from user
+    """
+    print("enter sales data from last market")
+    print("data should be six numbers seperated by commas")
+    print("example: 10, 20, 30, 40, 50 , 60")
+
+    data_str = input("enter your data here: ")
+    print(f"the data you provided is {data_str}")
+
+get_sales_data()
